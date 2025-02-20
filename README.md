@@ -5,7 +5,7 @@ This guide explains how to enable Kobo e-reader synchronization with a self-host
 ## References
 
 - [Calibre-Web Issue #1891](https://github.com/janeczku/calibre-web/issues/1891#issuecomment-801886803)
-- [Synology Reverse Proxy Documentation](https://www.synology.com/en-global/knowledgebase/DSM/help/DSM/AdminCenter/application_reverseproxy)
+- [Synoforum Post](https://www.synoforum.com/threads/synology-reverse-proxy-under-the-hood.5271/page-5#post-71440)
 
 
 ## Problem
@@ -14,7 +14,7 @@ This guide explains how to enable Kobo e-reader synchronization with a self-host
 - Several sources promoted a [GitHub issue](https://github.com/janeczku/calibre-web/issues/1891#issuecomment-801886803), indicating an increased buffer size would fix the problem
 - Synology's built-in reverse proxy has limited configuration options and doesn't support this change natively
 - I didn't want to switch to a new reverse proxy setup
-- A [forum post](https://www.synology.com/en-global/knowledgebase/DSM/help/DSM/AdminCenter/application_reverseproxy) helped me understand the necessary steps to modify the existing setup in a way that would allow proper syncing
+- A [forum post](https://www.synoforum.com/threads/synology-reverse-proxy-under-the-hood.5271/page-5#post-71440) helped me understand the necessary steps to modify the existing setup in a way that would allow proper syncing
 
 
 ## Prerequisites
