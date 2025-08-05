@@ -28,7 +28,8 @@ This guide explains how to enable Kobo e-reader synchronization with a self-host
 	4. Update the API endpoint so that the path includes `https://` and not `http://`
 
 3. A Kobo e-reader with an updated config file
-	1. Include the updated API endpoint URL from above in the  Kobo eReader.conf file 
+	1. Include the updated API endpoint URL from above in the `.kobo/Kobo eReader.conf` file
+ 	2. The correct line will look something like this: `api_endpoint=https://books.<domain>/kobo/<token>`
 
 4. Built-in Synology Reverse Proxy configured to access your Calibre Web Docker container (e.g., https://calibre.domain.td), incl. certificates and so on.
 
