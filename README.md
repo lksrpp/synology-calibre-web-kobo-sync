@@ -142,7 +142,21 @@ We'll modify the reverse proxy configuration to include the necessary buffer set
    ```
 
 
-## Step 5: Finalize Setup
+## Step 5: Create HTTP redirect
+
+1. Navigate to the Reverse Proxy again: Login Portal > Advanced > Reverse Proxy
+
+2. Create an additional entry to redirect HTTP requests to the calibre-web url. This is required, because kobo will create some additional entries in the config file that point to the calibre-web domain, but only work with HTTP
+
+3. Details for the reverse proxy entry:
+	- Name it for example "calibre-web HTTPS redirect"
+	- Source settings: HTTP // calibre-web URL // Port 80
+	- Destination settings: HTTP // localhost // Calibre-Web-Port
+
+4. Apply the settings
+
+
+## Step 6: Finalize Setup
 
 1. Test accessing Calibre-Web through your normal domain
 
